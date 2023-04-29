@@ -1,0 +1,24 @@
+\documentclass[letterpaper]{article}
+\usepackage{cleveref}
+
+\begin{document}
+
+\section{First}
+\label{sec:first}
+\subsection{First sub}
+\label{sec:first_sub_first}
+\subsection{Second sub}
+\label{sec:first_sub_second}
+Reference to the first subsection \cref{sec:first_sub_first}.
+
+\section{Second}
+\label{sec:second}
+Reference to the first section \cref{sec:first}. 
+Reference to the first subsection \cref{sec:first_sub_first}. 
+Reference to the second subsection \cref{sec:first_sub_second}.
+
+\section{Third}
+\label{sec:third}
+Reference to the second section \cref{sec:second}.
+
+\end{document}
